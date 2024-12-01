@@ -6,7 +6,7 @@ https://adventofcode.com/
 
 | Day  | Link                                           | Language | Stars |
 |------|------------------------------------------------|----------|-------|
-|  1   | [Day 1](https://adventofcode.com/2024/day/1)   |          |       |
+|  1   | [Day 1](https://adventofcode.com/2024/day/1)   |  Python  |   2   |
 |  2   | [Day 2](https://adventofcode.com/2024/day/2)   |          |       |
 |  3   | [Day 3](https://adventofcode.com/2024/day/3)   |          |       |
 |  4   | [Day 4](https://adventofcode.com/2024/day/4)   |          |       |
