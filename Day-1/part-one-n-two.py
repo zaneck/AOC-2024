@@ -1,10 +1,13 @@
-def by_line(file: str):
+from typing import Generator
+
+
+def by_line(file: str) -> Generator[list[str], None, None]:
     with open(file, "r") as f:
         for line in f:
             yield line.strip().split("   ")
 
 
-def two_list(file: str):
+def two_list(file: str) -> tuple[list[str], list[str]]:
     l1 = []
     l2 = []
     for line in by_line(file):
@@ -13,8 +16,8 @@ def two_list(file: str):
     return sorted(l1), sorted(l2)
 
 
-def similarity(l1, l2):
-    count = {}
+def similarity(l1, l2) -> int:
+    count:dict[str,int] = {}
     res = 0
 
     for e in l2:
@@ -26,7 +29,7 @@ def similarity(l1, l2):
     return res
 
 
-def diff_sum(l1, l2):
+def diff_sum(l1, l2) -> int:
     return sum([abs(int(x) - int(y)) for x, y in zip(l1, l2)])
 
 
